@@ -1,14 +1,15 @@
 import random
 n1 = -1
 print ( "Игра угадай число.")
+mx = int(input('Максимальное: '))
+r = random.randint(1,mx)
+
 def fun():
-    while int(n1) < 0  or int(n1) >10:
+    while int(n1) < 0  or int(n1) > mx:
          try:  
-             return  int(input ("Введите число  от 0 до 10 = "))
+             return  int(input ("Введите число  от 0 до {}  " .format(mx)))
          except ValueError:
               print ( "Ошибка ")
-
-r = random.randint(1,10)
 
 while r != n1:
       n1 = -1
