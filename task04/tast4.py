@@ -3,7 +3,7 @@ import random
 
 parol = input("Введите пароль: ")
 
-def fun(h=4):
+def fun(h=len(parol)-4):
     st2 = ''
     i = 0
     r = '123456789'
@@ -25,8 +25,7 @@ if len(parol) >= 8:
     elif not re.search('\d+', parol):
        print ("Пароль не содержит цифр")
     elif set(parol).isdisjoint(set('+-/*!&$#?=@<>_')):
-        print ("Пароль не содержит спец.знак")       
-                         
+        print ("Пароль не содержит спец.знак")   
     else:
         print ("Пароль правильный)")             
 else:
