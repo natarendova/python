@@ -4,11 +4,13 @@ import getpass
 list = ['камень', 'ножницы', 'бумага' ]
 print ('Начнем игру.')
 igr1 = getpass.getpass('1 - й игрок: камень, ножницы, бумага - ')
+igr1 = igr1.lower()
 while igr1 not in list:
      print ('Не верно')
-     igr1 = getpass.getpass('1 - й игрок: камень, ножницы, бумага - ')  
+     igr1 =  getpass.getpass('1 - й игрок: камень, ножницы, бумага - ')  
 
 igr2 = getpass.getpass('2 - й игрок: камень, ножницы, бумага - ')
+igr2 = igr2.lower()
 while igr2 not in list:
      print ('Не верно')
      igr2 = getpass.getpass('2 - й игрок: камень, ножницы, бумага - ')    
