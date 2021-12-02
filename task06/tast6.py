@@ -21,8 +21,6 @@ def fun():
             break
     return igr
 
-
-
 while True:
      igr1 = fun()
      igr2 = fun()
